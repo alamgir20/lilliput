@@ -1,0 +1,9 @@
+
+@media (max-width: 991px) {
+  .mobile_header {
+    display: block !important;
+  }
+  .navbar {
+    display: none;
+  }
+}
