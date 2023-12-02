@@ -273,3 +273,62 @@ jQuery(function ($) {
   $this.countTo(options);
   }
 });
+
+// slider
+let SwiperTop = new Swiper('.swiper--top', {
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 1,
+  },
+  loop: true,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
+let SwiperBottom = new Swiper('.swiper--bottom', {
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 1,
+    reverseDirection: true
+  },
+  loop: true,
+  loopedSlides: 4,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
+// testimonial
+ $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items:2,
+                itemsDesktop:[1000,2],
+                itemsDesktopSmall:[990,2],
+                itemsTablet:[768,1],
+                pagination:true,
+                navigation:false,
+                navigationText:["",""],
+                slideSpeed:1000,
+                autoPlay:true
+            });
+        });
+
+ // navbar
+  $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.navbar_section').addClass('black');
+            }
+            else{
+                $('.navbar_section').removeClass('black');
+            }
+        })
+  /*menu button onclick function*/         $(document).ready(function(){
+                $('.menu h4').click(function(){
+                    $("nav ul").toggleClass("active")
+            })
+            })
