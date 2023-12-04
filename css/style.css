@@ -201,7 +201,7 @@ button.default-btn span {
  .section_title h2 {
     font-size: 20px;
     font-weight: 500;
-    color: #4285f4;
+    color: #ffc107;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -230,7 +230,7 @@ button.default-btn span {
      font-size: 16px;
 }
 .navbar_section.black {
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
+    background: #000;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 li.nav-item {
@@ -374,41 +374,18 @@ li.nav-item {
 }
 /*end mobile menu*/
 /*hero area*/
-.welcome-area {
-    height: 700px;
-    z-index: 1;
+.welcome-area{
+  background-image: url(../image/bg-hero.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.bg-overlay {
-    position: relative;
-    z-index: 0;
-}
-.shape-bottom {
-    position: absolute;
-    top: auto;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-}
-.bg-overlay::after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(179deg, #000000 0%, #1f2655 100%);
-    opacity: 0.94;
-    z-index: -1;
-}
-.welcome-area.bg-overlay::after {
-    z-index: -2;
-}
-.overflow-hidden {
-    overflow: hidden!important;
-}
-.welcome-area .shape-bottom svg {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+.content_box {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
 }
 .content_box h2 {
      font-size: 54px;
@@ -465,8 +442,8 @@ li.nav-item {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(#4285f4), to(transparent));
-    background: linear-gradient(left, #4285f4, transparent);
+    background: -webkit-gradient(linear, left top, right top, from(#ffc107), to(transparent));
+    background: linear-gradient(left, #ffc107, transparent);
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
@@ -479,8 +456,8 @@ li.nav-item {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#4285f4));
-    background: linear-gradient(left, transparent, #4285f4);
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#ffc107));
+    background: linear-gradient(left, transparent, #ffc107);
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
@@ -492,8 +469,8 @@ li.nav-item {
     right: 0;
     width: 2px;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#4285f4), to(transparent));
-    background: linear-gradient(bottom, #4285f4, transparent);
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffc107), to(transparent));
+    background: linear-gradient(bottom, #ffc107, transparent);
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
@@ -505,14 +482,14 @@ li.nav-item {
     left: 0;
     width: 2px;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4285f4), to(transparent));
-    background: linear-gradient(top, #4285f4, transparent);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffc107), to(transparent));
+    background: linear-gradient(top, #ffc107, transparent);
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
 }
 .single-feature:hover {
-    background-color: #4285f4;
+    background-color: #ffc107;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
 }
@@ -557,7 +534,7 @@ li.nav-item {
 .banner_section {
     overflow: hidden;
     text-align: center;
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
+    background: #000;
     width: 100%;
 }
 
@@ -567,11 +544,12 @@ li.nav-item {
      z-index: 1;
      position: relative;
 }
- .content_banner p{
-     color: #fff;
-     font-size: 16px;
-     font-weight: 500;
-     line-height: 35px;
+.content_banner p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 8px;
 }
  .banner_section .btn_box a{
      background: #fff;
@@ -624,22 +602,22 @@ li.nav-item {
      text-decoration: none;
 }
  .filters li a:hover{
-     color:#4285f4;
+     color:#ffc107;
 }
 
  .filters li.active a{
-     color: #4285f4;
-     border: 1px solid #4285f4;
+     color: #ffc107;
+     border: 1px solid #ffc107;
      border-radius: 15px;
      box-shadow: -1px 1px 11px rgba(0,0,0,.4);
      padding: 10px 25px;
 }
  .isotope-pager .active{
-     color: #4285f4 !important;
+     color: #ffc107 !important;
      box-shadow: -1px 1px 10px 5px rgba(0,0,0,.1);
      border-radius: 25px;
-     background-color: #4285f4;
-     border: 1px dotted #4285f4;
+     background-color: #ffc107;
+     border: 1px dotted #ffc107;
 }
  .isotope-pager .prev{
      border-radius: 30px 0 0 30px;
@@ -684,13 +662,10 @@ li.nav-item {
 .achivement_section {
     overflow: hidden;
     text-align: center;
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
+    background: #000;
     width: 100%;
 }
 
- .achivement_section .section_title h2{
-     color: #fff;
-}
  .achivement_section .section_title h3{
      color: #fff;
 }
@@ -740,11 +715,7 @@ li.nav-item {
     padding: 38px 42px;
     border-radius: 10px;
 }
-.expertise_section .container .row {
-    background: rgb(199 199 199 / 7%);
-    padding: 20px;
-    border-radius: 10px;
-}
+
 .exp_content ul li {
     line-height: 35px;
 }
@@ -818,7 +789,7 @@ li.nav-item {
      margin-top: 50px;
 }
  .testimonial {
-     border-right: 4px solid #4285f4;
+     border-right: 4px solid #ffc107;
      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
      padding: 30px 30px 30px 130px;
      margin: 0 15px 30px 15px;
@@ -832,7 +803,7 @@ li.nav-item {
      position: absolute;
      bottom: -4px;
      left: -17px;
-     border-top: 25px solid #4285f4;
+     border-top: 25px solid #ffc107;
      border-left: 25px solid transparent;
      border-right: 25px solid transparent;
      transform: rotate(45deg);
@@ -842,7 +813,7 @@ li.nav-item {
      position: absolute;
      top: -4px;
      left: -17px;
-     border-top: 25px solid #4285f4;
+     border-top: 25px solid #ffc107;
      border-left: 25px solid transparent;
      border-right: 25px solid transparent;
      transform: rotate(135deg);
@@ -874,24 +845,24 @@ li.nav-item {
      font-weight: 700;
      text-transform: uppercase;
      letter-spacing: 1px;
-     color: #4285f4;
+     color: #ffc107;
      margin: 0;
 }
  .testimonial .post{
      display: inline-block;
      font-size: 17px;
-     color: #4285f4;
+     color: #ffc107;
      font-style:italic;
 }
  .owl-theme .owl-controls .owl-page span{
-     border: 2px solid #4285f4;
+     border: 2px solid #ffc107;
      background: #fff;
      border-radius:0;
      opacity: 1;
 }
  .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls .owl-page:hover span{
-     background: #4285f4;
-     border-color:#4285f4;
+     background: #ffc107;
+     border-color:#ffc107;
 }
  
 /*end client*/
@@ -899,7 +870,7 @@ li.nav-item {
 .get-in-touch-area {
    overflow: hidden;
     text-align: center;
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
+    background: #000;
     width: 100%;
 }
 
@@ -940,9 +911,6 @@ li.nav-item {
     border: none ;
     height: 50px;
     padding-left: 15px;
-}
-.white_title h2{
-    color: #fff;
 }
 .white_title h3{
     color: #fff;
@@ -987,7 +955,7 @@ li.nav-item {
     transition: all 0.4s ease;
 }
 .ulockd-service-box, .ulockd-tm-overlay, .bgc-thm-trnsp, .about-box:before {
-    background-color: rgb(66 133 244 / 90%);
+    background-color: rgb(255 193 7 / 89%);
 }
 .ulockd-tm-name {
     color: #fff;
@@ -1008,7 +976,7 @@ li.nav-item {
 }
 .ulockd-social-linked a {
     border: 1px solid #aaa;
-    color: #ddd;
+    color: #fff;
     font-size: 15px;
     padding: 5px 9px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1045,13 +1013,11 @@ li.nav-item {
 /*footer section*/
 .footer-area {
    overflow: hidden;
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
-    width: 100%;
+   background: #000;
+   width: 100%;
 }
 .single-footer-widget img {
     width: 100%;
-    margin-left: -25px;
-    margin-top: -18px;
 }
 .single-footer-widget {
     margin-bottom: 30px;
@@ -1085,7 +1051,7 @@ li.nav-item {
 .single-footer-widget .social-icon li a:hover {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
-    background: #4285f4;
+    background: #ffc107;
 }
 
 .single-footer-widget h3 {
@@ -1158,7 +1124,7 @@ li.nav-item {
     color: rgba(255, 255, 255, 0.9);
 }
 .copy-right-area {
-    background: linear-gradient(289deg, #000000 -14%, #1f2655 100%);
+    background: #000;
     border-top: 1px solid rgb(255 255 255 / 26%);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1168,6 +1134,6 @@ li.nav-item {
     color: #ffffff;
 }
 .copy-right-area p a {
-    color: #e21f36;
+    color: #ffc107;
     font-weight: 600;
 }
